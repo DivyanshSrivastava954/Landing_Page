@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="lan.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelSite</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#book">Book</a></li>
+                <li><a href="#pack">Packages</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="display: flex; align-items: center; justify-content: space-between; padding: 20px;">
+        <div style="flex: 1; padding-right: 20px;">
+            <h1 class="heading">Welcome to TravelSite</h1>
+            <br>
+            <p class="para">Your adventure starts here!</p>
+            <br>
+            <br>
+            <p class="paragra">Discover our exclusive travel packages tailored just for you. Whether you're looking for a relaxing beach holiday or an adventurous mountain trek, we have something for everyone!</p>
+            <br>
+            <br>
+            <a href="#packages" class="btn" style="display: inline-block; padding: 10px 15px; background-color: orange; color: white; text-decoration: none; border-radius: 5px;">Explore Packages</a>
+        </div>
+        <div style="flex: 1;">
+            <img src="t.jpg" alt="Travel Image" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+    </section>
+    <section id="book" style="display: flex; align-items: flex-start; justify-content: space-between; padding: 20px;">
+        <div style="flex: 1; padding-left: 20px;">
+            <img src="3d.webp" alt="Travel Image" style="width: 100%; height: auto; border-radius: 10px;">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="booking-form" style="flex: 1; padding-right: 20px;">
+            <h1>Book Your Trip</h1>
+            <form>
+                <div class="form-group">
+                    <label for="destination">To:</label>
+                    <input type="text" id="destination" placeholder="Destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">From:</label>
+                    <input type="text" id="departure" placeholder="Departure Location" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="members">Number of Members:</label>
+                    <input type="number" id="members" placeholder="Number of Members" required min="1">
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <section id="pack" style="padding: 20px; background: lightBlue;">
+        <h2>Our Packages</h2>
+        <div class="package-list" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px;">
+            <div class="package" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3>Beach Getaway</h3>
+                <p>Enjoy a relaxing week at the beach with all-inclusive amenities.</p>
+                <p>Price: $499</p>
+                <a href="#book" class="btn" style="padding: 10px 15px; background-color: orange; color: white; text-decoration: none; border-radius: 5px;">Book Now</a>
+            </div>
+            
+            <div class="package" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3>Mountain Adventure</h3>
+                <p>Experience the thrill of hiking and exploring nature.</p>
+                <p>Price: $599</p>
+                <a href="#book" class="btn" style="padding: 10px 15px; background-color: orange; color: white; text-decoration: none; border-radius: 5px;">Book Now</a>
+            </div>
+        
+            <div class="package" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3>Cultural Tour</h3>
+                <p>Discover the rich history and culture of our destinations.</p>
+                <p>Price: $399</p>
+                <a href="#book" class="btn" style="padding: 10px 15px; background-color: orange; color: white; text-decoration: none; border-radius: 5px;">Book Now</a>
+            </div>
+        </div>
+    </section>
+    <section id="service" style="padding: 20px;background-color: rgb(246, 170, 103)">
+        <h2>Our Services</h2>
+        <div class="service-list" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px;  padding: 20px;">
+            <div class="service-item" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc;background-color: white; border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3 style="color: #ff6600; font-size: 24px;">Guided Tours</h3>
+                <p style="color: #333; font-size: 16px;">Join our expert guides for unforgettable experiences at popular destinations.</p>
+            </div>
+            
+            <div class="service-item" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; background-color: white;border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3 style="color: #ff6600; font-size: 24px;">Guided Tours</h3>
+                <p style="color: #333;font-size: 16px;">Join our expert guides for unforgettable experiences at popular destinations.</p>
+            </div>
+            
+            <div class="service-item" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; background-color: white;border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3 style="color: #ff6600; font-size: 24px;">Transportation Services</h3>
+                <p style="color: #333;font-size: 16px;">Enjoy hassle-free transportation with our airport transfers and car rental services.</p>
+            </div>
+            
+            <div class="service-item" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; background-color: white;border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3 style="color: #ff6600;font-size: 24px;">24/7 Customer Support</h3>
+                <p style="color: #333;font-size: 16px;">Our dedicated support team is available around the clock to assist you with any inquiries.</p>
+            </div>
+            
+            <div class="service-item" style="flex: 1 1 calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc;background-color: white; border-radius: 10px; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; animation: fadeIn 0.5s;">
+                <h3 style="color: #ff6600;font-size: 24px;">Custom Itineraries</h3>
+                <p style="color: #333;font-size: 16px;">Let us help you create a personalized travel itinerary that fits your preferences and budget.</p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" style="background: lightblue;">
+        <h2>Gallery</h2>
+        <div class="gallery-container " >
+            <div class="img-container color1"><img src="1.jpg" alt=""></div>
+            <div class="img-container color1"><img src="2.jpg" alt=""></div>
+            <div class="img-container color1"><img src="3.jpg" alt=""></div>
+            <div class="img-container color1"><img src="4.jpg" alt=""></div>
+            <div class="img-container color1"><img src="5.jpg" alt=""></div>
+            <div class="img-container color1"><img src="6.jpg" alt=""></div>
+            <div class="img-container color1"><img src="7.jpg" alt=""></div>
+            <div class="img-container color1"><img src="8.jpg" alt=""></div>
+            
+        </div>
+    </section>
+    <section id="contact" style="background:  rgb(246, 170, 103);">
+        <h2>Contact Us</h2>
+        <form class="contact-form" style="max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: lightblue;">
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="Subject" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your Message" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; height: 100px;"></textarea>
+            </div>
+            <button type="submit" style="padding: 10px 15px; background-color: orange; color: white; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 TravelSite. All rights reserved.</p>
+    </footer>
+
+    <script src="lan.js"></script>
+</body>
+</html>
